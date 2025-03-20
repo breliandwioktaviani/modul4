@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website CSS</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        #container_utama{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #header{
+            height: 20%;
+            background-color: blue;
+            padding: 20px 10px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #text_halo{
+            font-size: 50px;
+            color: yellow;
+            margin: 0px;
+        }
+        #text_white{
+            color: white;
+        }
+        #content{
+            width: 100%;
+            margin: 10 px 0px;
+            flex: 1;
+            display: flex;
+        }
+        #sidebar{
+            width: 30%;
+            border: 1px dashed blue;
+            padding: 10px;
+            height: 100%;
+        }
+        #content_utama{
+            width: 70%;
+            height: 100%;
+        }
+        #content_utama > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .menu{
+            text-decoration: none;
+            color: grey;
+        }
+        .menu:hover{
+            text-decoration: underline;
+            color: black;
+            font-weight: 900;
+        }
+        #text-red{
+            margin-top: 20px;
+            color: red;
+            text-align: center;
+        }
+        #footer{
+            margin-top: auto;
+            height: 10%;
+            background-color: #B0D0EF;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: black;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #content_utama h3{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        #content_utama img{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container_utama">
+        <div id="header">
+          <p id="text_halo">Halo CSS</p>
+          <p id="text_white">Ini adalah website CSS saya</p>
+        </div>
+        <div id="content">
+          <div id="sidebar">
+            <ul>
+              <li><a class="menu" href="">Menu 1</a></li>
+              <li><a class="menu" href="">Menu 2</a></li>
+              <li><a class="menu" href="">Menu 3</a></li>
+              <li><a class="menu" href="">Menu 4</a></li>
+              <li><a class="menu" href="">Menu 5</a></li>
+              <li><a class="menu" href="">Menu 6</a></li>
+            </ul>
+          </div>
+          <div id="content_utama">
+            <div>
+              <img src="icon.png" alt="Gambar TI" />
+              <h3>TI</h3>
+              <p>Politeknik Negeri Madiun</p>
+              <p id="text-red">
+                Mewujudkan pendidikan tinggi vokasi dalam bidang 
+                Teknologi Informasi dan penerapannya yang berkualitas, inovatif, dan berdaya
+                saing Nasional.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <p>Brelian Dwi Oktaviani | 243307071 | TI-2C</p>
+        </div>
+      </div>
+</body>
+</html>
